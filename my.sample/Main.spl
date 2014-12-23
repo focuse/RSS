@@ -46,7 +46,16 @@ composite Main {
 		stream <rssReaderOutput> RSSReaderOutput = RSSReader(RSSReaderInput) {
 		} // End of RSSReaderOutput = RSSReader(RSSReaderInput)
 		
-		() as RssResults = FileSink(RSSReaderOutput) {
+		
+		stream <rssReaderOutput> RSSReaderOutput2 = Custom(RSSReaderOutput as rReaderOutput) {
+			logic 
+				onTuple rReaderOutput: {
+						printStringLn (rssProviderName);
+						submit(rReaderOutput, RSSReaderOutput2);
+				} // End of onTuple newProduct.
+		} 
+		
+		() as RssResults = FileSink(RSSReaderOutput2) {
 			param
 				file: "rss-output.txt";
 				format: csv;

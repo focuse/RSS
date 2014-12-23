@@ -147,7 +147,6 @@ public class RSSReader extends AbstractOperator{
 				rssResult.add("Link: " + getElementValue(element,"link"));
 				rssResult.add("Publish Date: " + getElementValue(element,"pubDate"));
 				rssResult.add("Author: " + getElementValue(element,"dc:creator"));
-				rssResult.add("Comments: " + getElementValue(element,"wfw:comment"));
 				rssResult.add("Description: " + getElementValue(element, "description"));
 				// Add that set to the results hashmap.
 				rssResults.put(i+1, rssResult);

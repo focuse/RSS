@@ -1,5 +1,12 @@
 033_java_primitive_operator_at_work/1.0.0
 spl/1.1.0
+001_hello_world_in_spl/1.0.0
+002_source_sink_at_work/1.0.0
+003_sink_at_work/1.0.0
+005_throttle_at_work/1.0.0
+012_filter_functor_at_work/1.0.0
+017_filesource_filesink_at_work/1.0.0
+028_multiple_composites_at_work/1.0.0
 com.ibm.streams.bigdata/2.1.0
 com.ibm.streams.cep/1.0.0
 com.ibm.streams.db/1.4.0
@@ -11,3 +18,5 @@ com.ibm.streams.messaging/2.1.000
 com.ibm.streams.mining/1.0.0
 com.ibm.streams.text/1.2.0
 com.ibm.streams.timeseries/2.1.0
+com.ibm.streamsx.dps/1.0.0
+com.ibm.streamsx.ps/1.0.0
